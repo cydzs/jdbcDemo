@@ -24,8 +24,9 @@ public class test {
 
         us.addUser(user);
          */
-        /**
-         * 添加1000条
+
+//         添加1000条
+    /*
         System.out.println("Math.random()*201 = " + (int)(Math.random() * 201));
         for (int i = 0; i <1000 ; i++) {
             User user =new User();UserService us =new UserServiceImpl();
@@ -35,39 +36,46 @@ public class test {
             user.setGender(randomUser.randomGender());
             us.addUser(user);
         }
-         */
-        /**
-         * 通过id删除
+        */
+
+    /**
         UserService us =new UserServiceImpl();
-        us.dropUser(3005);
-         */
+        us.dropUser(1005);
+    */
+
+         // 根据id修改积分
         /**
-         * 根据id修改积分
         User user =new User();
         user.setIntegral(88);
-        user.setId(1005);
+        user.setId(1006);
         UserService us =new UserServiceImpl();
         us.modifUser(user);
-         */
-        /**通过id查找所有信息
+*/
+//        通过id查找所有信息
+        /**
         UserService us =new UserServiceImpl();
         List <User>users =us.findUser(1025);
         for(User user:users){
             System.out.println("user = " + user);
         }
          */
-        /**查询积分大于的信息
+
+        //查询积分大于的信息
+        /**
         UserService us =new UserServiceImpl();
         List <User>users =us.findUserMoreIt(198);
         for(User user:users){
             System.out.println("user = " + user);
-        }
-        */
+        }*/
+
+        //根据月份查询
+
         UserService us =new UserServiceImpl();
         List <User>users =us.findUserByMonth(10);
         for(User user:users){
             System.out.println("user = " + user);
         }
+
 
     }
 }
